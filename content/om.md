@@ -21,8 +21,9 @@ Om
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
 
-Skriv några kloka ord om kursen?
+Det skall bli spännande och arbeta med Anax igen, hade en tuff start förra kursen vi använde Anax men började förstå 
+det bättre och bättre och hoppas det blir ännu bättre denna gång.
 
-Lägg till en fin och representativ bild för kursen, enligt ditt eget val.
+Utöver det skall det bli roligt och fortsätta lära sig PHP.
 
-[FIGURE src=image/car.png?w=740&filter=grayscale&f1=colorize,0,30,0,0 caption="En fin bil som demobild, lite oklart hur den är representativ, men ändå..."]
+[FIGURE src=image/webIllustration.jpg?w=740&f1=colorize,0,30,0,0 caption="Webprogramming illustraion"]

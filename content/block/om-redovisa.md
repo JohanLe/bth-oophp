@@ -1,3 +1,3 @@
 #### Redovisa på GitHub
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+Vill ni hitta källkoden för detta projekt? Det gör ni på [Github](https://github.com/JohanLe/bth-oophp).

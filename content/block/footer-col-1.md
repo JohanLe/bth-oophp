@@ -1,3 +1,8 @@
-#### Footer col 1
+#### Utrustning
+> MacBook PRO
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+> MacOS MOJAVE
+
+> 24" LG 1080p Skärm
+
+

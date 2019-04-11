@@ -1,3 +1,9 @@
-#### Footer col 3
+#### Övrigt
+> Favorit programmeringsspråk: Javascript
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+> Favorit IDE: PHPSTORM
+
+> Favorit nykomling: PHP & Python
+
+
+

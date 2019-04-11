@@ -1,3 +1,9 @@
-#### Footer col 2
+#### Hobbys
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+> Golf, HCP 5.9
+
+> Gym, Inte jätte stark
+
+> Fotboll, Dåliga knän & Fötter
+
+> Vin, Rött
