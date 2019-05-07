@@ -9,14 +9,13 @@ require "GuessException.php";
 class Guess
 {
     /**
-     * @var int $numb The current secret number.
-     * @var int $tries Number of tries a guess_org has been made.
+     * @var int $secretNumber The current secret number.
+     * @var int $triesLeft Number of tries a guess_org has been made.
      */
 
     private $secretNumber = 0;
     private $triesLeft = 0;
-    private $isStarted = false;
-    private $isCompleted = false;
+
 
     /**
      * Constructor to initiate the object with current game settings,
@@ -30,12 +29,10 @@ class Guess
 
     public function __construct(int $numb = -1, int $tries = 6)
     {
-        if (!$this->isStarted) {
+
             $this->random();
             $this->triesLeft = $tries;
-            $this->hasStarted();
             $this->secretNumber = $numb;
-        }
     }
 
 
@@ -50,28 +47,6 @@ class Guess
         $this->secretNumber = rand(0, 100);
     }
 
-    public function isStarted()
-    {
-        return $this->isStarted;
-    }
-
-    public function hasStarted()
-    {
-        $this->isStarted = true;
-    }
-
-    public function hasEnded()
-    {
-        $this->isStarted = false;
-        $this->triesLeft = 6;
-        $this->random();
-        $this->isCompleted = false;
-    }
-
-    public function isCompleted()
-    {
-        return $this->isCompleted;
-    }
 
     /**
      * Get number of tries left.
@@ -96,40 +71,4 @@ class Guess
         return $this->secretNumber;
     }
 
-
-    /**
-     * Make a guess_org, decrease remaining guesses and return a string stating
-     * if the guess_org was correct, too low or to high or if no guesses remains.
-     *
-     * @throws GuessException when guessed number is out of bounds.
-     *
-     * @return string to show the status of the guess_org made.
-     */
-
-    public function makeGuess($numb, $result = "")
-    {
-        if ($numb > 100 || $numb < 0 || $numb == "") {
-            try {
-                $gex = new GuessExeption();
-                $gex->outOfRange();
-            } catch (Exception $e) {
-                $result = $e;
-            }
-        } elseif ($this->triesLeft <= 0) {
-            $result = "All out of guesses";
-            $this->isCompleted = true;
-        } else {
-            if ($numb < $this->secretNumber) {
-                $result = "Your guess_org(" . $numb . ") is to low";
-            } elseif ($numb > $this->secretNumber) {
-                $result = "Your guess_org(" . $numb . ") is to high";
-            } else {
-                $result = "Your guess_org: " . $numb . " is CORRECT ";
-                $this->isCompleted = true;
-            }
-            $this->triesLeft -= 1;
-        }
-
-        return $result;
-    }
 }

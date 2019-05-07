@@ -29,7 +29,8 @@ $app->router->get("guess/init", function () use ($app) {
 
 
 /**
- * Play the game
+ * Gathers data from $_session
+ * Play the game, adds view to app and then renders the page with data.
  */
 $app->router->get("guess/play", function () use ($app) {
 
@@ -51,7 +52,12 @@ $app->router->get("guess/play", function () use ($app) {
     ]);
 });
 
-
+/*
+ * $_post - handler
+ * When user pressed any of Guess/Cheat/Reset buttons.
+ * Checks user input, responds and set new values to $_session
+ * Redirects to guess/play
+ */
 $app->router->post("guess/play", function () use ($app) {
 
 
