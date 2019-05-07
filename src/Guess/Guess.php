@@ -70,5 +70,4 @@ class Guess
     {
         return $this->secretNumber;
     }
-
 }
